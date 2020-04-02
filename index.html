@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>Boostrap Study</title>
+		<style>
+			body > div:nth-child(odd) {
+				background-color: #FFF0F0;
+			}
+			body > div:nth-child(even) {
+				background-color: #FFFFF0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			container: 固定宽度并支持响应式布局的容器
+		</div>
+		<div class="container-fluid">
+			container-fluid: 100%宽度，占据全部视口(viewport)的容器
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">col-lg-3</div>
+				<div class="col-lg-3">col-lg-3</div>
+				<div class="col-lg-3">col-lg-3</div>
+				<div class="col-lg-3">col-lg-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">col-md-3</div>
+				<div class="col-md-3">col-md-3</div>
+				<div class="col-md-3">col-md-3</div>
+				<div class="col-md-3">col-md-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">col-sm-3</div>
+				<div class="col-sm-3">col-sm-3</div>
+				<div class="col-sm-3">col-sm-3</div>
+				<div class="col-sm-3">col-sm-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">col-xs-3</div>
+				<div class="col-xs-3">col-xs-3</div>
+				<div class="col-xs-3">col-xs-3</div>
+				<div class="col-xs-3">col-xs-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-3">col-lg-offset-3</div>
+				<div class="col-lg-3 col-lg-offset-3">col-lg-offset-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-3">col-md-offset-3</div>
+				<div class="col-md-3 col-md-offset-3">col-md-offset-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-3">col-sm-offset-3</div>
+				<div class="col-sm-3 col-sm-offset-3">col-sm-offset-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-3">col-xs-3</div>
+				<div class="col-xs-3 col-xs-offset-3">col-xs-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-push-9">col-md-push-9</div>
+				<div class="col-md-9 col-md-pull-3">col-md-pull-3</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h1 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h1</h1>
+				<h2 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h2</h2>
+				<h3 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h3</h3>
+				<h4 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h4</h4>
+				<h5 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h5</h5>
+				<h6 class="col-lg-1 col-md-1 col-sm-1 col-xs-1">h6</h6>
+			</div>
+		</div>
+		<div class="container">
+			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+			<p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+			<p>
+				You can use the mark tag to <mark>突出文本</mark> text.
+				<del>被删除的文本</del>
+				<s>无用文本</s>
+				<ins>插入文本</ins>
+				<u>带下划线的文本</u>
+				<small>小号文本</small>
+				<strong>着重</strong>
+				<em>斜体</em>
+			</p>
+			<p class="text-left">text-left</p>
+			<p class="text-center">text-center</p>
+			<p class="text-right">text-right</p>
+			<p class="text-nowrap">text-nowrap 我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；我不换行，就不换行；</p>
+			<p class="text-lowercase">text-lowercase</p>
+			<p class="text-uppercase">text-uppercase</p>
+			<p class="text-capitalize">text-capitalize</p>
+			<p>你看不到我写什么？<abbr class="initialism" title="我是要当海贼王的男人">海</abbr></p>
+			<blockquote>
+				<p>引用文本</p>
+				<footer>来自西西卡尔carl</footer>
+			</blockquote>
+			<blockquote class="blockquote-reverse">
+				<p>引用文本</p>
+				<footer>来自西西卡尔carl</footer>
+			</blockquote>
+		</div>
+		<div class="container">
+			<ul>
+				<li>ul-li</li>
+				<li>
+					ul-li
+					<ul>
+						<li>ul-li-ui-li</li>
+						<li>ul-li-ui-li</li>
+						<li>ul-li-ui-li</li>
+					</ul>
+				</li>
+				<li>ul-li</li>
+			</ul>
+		</div>
+		<div class="container">
+			<ul>
+				<li>ul-li</li>
+				<li>
+					ul-li
+					<ul>
+						<li>ul-li-ui-li</li>
+						<li class="list-unstyled">ul-li-ui-li</li>
+						<li>ul-li-ui-li</li>
+					</ul>
+				</li>
+				<li>ul-li</li>
+			</ul>
+		</div>
+		<div class="container">
+			<ol>
+				<li>ol-li</li>
+				<li>ol-li</li>
+				<li>ol-li</li>
+			</ol>
+		</div>
+		<div class="container">
+			<div class="list-inline">
+				<li>line-inline</li>
+				<li>line-inline</li>
+				<li>line-inline</li>
+			</div>
+		</div>
+		<div class="container">
+			<dl>
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+		</div>
+		<div class="container">
+			<dl class="dl-horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+		</div>
+		<div class="container">
+			<dl class="dl-horizontal">
+				<dt>内联样式</dt>
+				<dd><code>&lt;section&gt;</code></dd>
+				<dt>键盘输入</dt>
+				<dd><kbd>ctrl + entry</kbd></dd>
+				<dt>代码块</dt>
+				<dd><pre>console.log("Hello World")</pre></dd>
+				<dt>变量</dt>
+				<dd><var>y</var>=<var>a</var><var>x</var></dd>
+				<dt>程序输出</dt>
+				<dd><samp>Hello World</samp></dd>
+			</dl>
+		</div>
+		<div class="container">
+			<table class="table">
+				<caption>基本实例</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<table class="table table-striped">
+				<caption>条纹状表格</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<table class="table table-bordered">
+				<caption>带边框的表格</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<table class="table table-hover">
+				<caption>鼠标悬停</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<table class="table table-condensed">
+				<caption>紧缩表格</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<table class="table table-condensed">
+				<caption>状态类</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>active</th>
+						<th>success</th>
+						<th>warning</th>
+						<th>danger</th>
+						<th>info</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td class="active">active</td>
+						<td class="success">success</td>
+						<td class="warning">warning</td>
+						<td class="danger">danger</td>
+						<td class="info">info</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="container">
+			<div class=" table-responsive">
+				<table class="table table-condensed">
+					<caption>响应式表格</caption>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>active</th>
+							<th>success</th>
+							<th>warning</th>
+							<th>danger</th>
+							<th>info</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td class="active">active</td>
+							<td class="success">success</td>
+							<td class="warning">warning</td>
+							<td class="danger">danger</td>
+							<td class="info">info</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputFile">File input</label>
+					<input type="file" id="exampleInputFile">
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Check me out
+					</label>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="container">
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="exampleInputName">Name</label>
+					<input type="text" class="form-control" id="exampleInputName" placeholder="Jane Doe">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail" placeholder="jane.doe@example.com">
+				</div>
+				<button type="submit" class="btn btn-default">Send invitation</button>
+			</form>
+		</div>
+		<div class="container">
+			<form class="form-inline">
+				<div class="form-group">
+					<labe class="sr-only" for="exampleInputName">Name</labe>
+					<input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputEmail">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+				</div>
+			</form>
+		</div>
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail">Email</label>
+					<div class="input-group">
+						<input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+						<div class="input-group-addon">@qq.com</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="container">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-lg-1 col-sm-2 control-label">Email</label>
+					<div class="col-lg-11 col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-lg-1 col-sm-2 control-label">Password</label>
+					<div class="col-lg-11 col-sm-10">
+						<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-lg-11 col-lg-offset-1 col-sm-10 col-sm-offset-2">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-lg-11 col-lg-offset-1 col-sm-10 col-sm-offset-2">
+						<button type="submit" class="btn btn-default">Sign in</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
